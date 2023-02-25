@@ -1,7 +1,21 @@
-Coucou c'est le back de bnb :p
+# bnb back
 
-docker build -t bnb-back:latest .
-docker run -p 3000:3000 bnb-back:latest
-docker tag bnb-back:latest titeshi/bnb-back:latest
-docker login
-docker push titeshi/bnb-back:latest
+Preview du get : http://bnbback-env.eba-5nzpmjkm.eu-west-1.elasticbeanstalk.com/homes
+
+## Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run start:dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
